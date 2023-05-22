@@ -93,7 +93,8 @@ export async function getStaticProps() {
       images,
       nextCursor: nextCursor === undefined ? null : nextCursor,
       totalCount
-    }
+    },
+    revalidate: 10,
   }
 }
 
